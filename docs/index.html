@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../src/css/styles.css">
-  <!-- Cambiar por css/styles.min.css al finalizar el proyecto -->
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;600&family=Inter:wght@300&family=Lato:wght@400;900&family=Quicksand&family=Raleway:ital,wght@0,300;0,700;1,400&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <!-- Cambiar por css/styles.min.css al finalizar el proyecto -->
+    <title>Document</title>
+  </head>
+  <body class="dark">
+    <header id="header" class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img
+            id="toggle-icon"
+            src="../assets/images/moon-regular.svg"
+            alt="icon theme"
+            class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+        </div>
+      </div>
+      <div class="flags">
+        <img
+          id="unitedkingdomFlag"
+          class="unitadkingdomflag flagsize"
+          src="../assets/images/united-kingom-flag.jpg"
+          alt="united-kingdomflag">
+        <img
+          id="germanFlag"
+          class="germanflag flagsize"
+          src="../assets/images/Flag-Germany.webp"
+          alt="germanflag">
+        <img
+          id="spainFlag"
+          class="flagsize"
+          src="../assets/images/spain-flag.jpg"
+          alt="spainflag">
+      </div>
+      <div id="colors" class="colors colors-none">
+        <div
+          data-color="hsl(39, 100%, 50%)"
+          class="colors__item--orange pointer-none"></div>
+        <div
+          data-color="hsl(167, 88%, 33%)"
+          class="colors__item--green pointer-none"></div>
+        <div
+          data-color="hsl(300, 100%, 25%)"
+          class="colors__item--purple pointer-none"></div>
+        <div
+          data-color="hsl(0, 100%, 50%)"
+          class="colors__item--red pointer-none"></div>
+      </div>
+      <p id="selectColors" class="texts__item texts__item--select"></p>
+      <p id="goback" class="texts__item texts__item--goback"></p>
+    </header>
+    <main>
+      <div class="description content">
+        <div class="imgcontainer">
+          <img
+            id="img"
+            class="imgmyself"
+            src="../assets/images/ramon-image1.jpg"
+            alt="ramons's pic">
+        </div>
+        <p id="paragraph" class="paragraph">
+          Soy Ramon Saavedra, un apasionado desarrollador frontend con una sed
+          constante de conocimiento y creatividad
+        </p>
+      </div>
+      <section class="skill-section">
+        <div class="content">
+          <h2>Skills</h2>
+          <div class="skillsUl">
+            <img
+              class="htmllogo logo"
+              src="../assets/images/html-logo.png"
+              alt="htmllogo">
+            <img
+              class="csslogo logo"
+              src="../assets/images/css.logo.png"
+              alt="csslogo">
+            <img
+              class="javascriptlogo logo"
+              src="../assets/images/javascript-logo.png"
+              alt="javascriptlogo">
+            <img
+              class="reactlogo logo"
+              src="../assets/images/React.svg.png"
+              alt="reactlogo">
+          </div>
+
+          <div class="experience experience-years">
+            <p class="experience-number">5</p>
+            <p class="experience-number">4</p>
+            <p class="experience-number">2</p>
+            <p class="experience-number number-display-none">5</p>
+          </div>
+          <div class="experience">
+            <span
+              id="experienceHTML"
+              class="experience__paragraph experience__paragraph--html"
+            >Months</span>
+            <span
+              id="experienceCss"
+              class="experience__paragraph experience__paragraph--css"
+            >Months</span>
+            <span
+              id="experienceJavaScript"
+              class="experience__paragraph experience__paragraph--javascript"
+            >Months</span>
+            <span
+              id="experienceReact"
+              class="experience__paragraph experience__paragraph--react"
+            >Lerning</span>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <script src="JS/script.js"></script>
+  </body>
 </html>
