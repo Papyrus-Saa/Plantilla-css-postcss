@@ -23,7 +23,7 @@ toggletThemeElement.addEventListener('click', (e) => {
     toggleIconElement.src = 'assets/images/sun-regular.svg'
     toggleTextElement.textContent = 'Light Mode'
   } else {
-    toggleIconElement.src = '../assets/images/moon-regular.svg'
+    toggleIconElement.src = 'assets/images/moon-regular.svg'
     toggleTextElement.textContent = 'Dark Mode'
   }
 });
