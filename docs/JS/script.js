@@ -20,7 +20,7 @@ const newColor = 'hsl(0, 0 %, 0 %)';
 toggletThemeElement.addEventListener('click', (e) => {
   document.body.classList.toggle('dark');
   if (toggleIconElement.src.includes('moon-regular.svg')) {
-    toggleIconElement.src = '../assets/images/sun-regular.svg'
+    toggleIconElement.src = 'assets/images/sun-regular.svg'
     toggleTextElement.textContent = 'Light Mode'
   } else {
     toggleIconElement.src = '../assets/images/moon-regular.svg'
