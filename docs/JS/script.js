@@ -1,3 +1,4 @@
+
 const toggletThemeElement = document.getElementById('toggle-theme');
 const toggleIconElement = document.getElementById('toggle-icon');
 const toggleTextElement = document.getElementById('toggle-text');
@@ -9,6 +10,8 @@ const germanFlagElement = document.getElementById('germanFlag');
 const spainFlagElement = document.getElementById('spainFlag');
 const paragraphElement = document.getElementById('paragraph');
 const logoElement = document.querySelectorAll('.logo');
+const btnElement = document.getElementById('btn-demo');
+const linkElement = document.getElementById('btn-code');
 
 
 const colorStyle = document.documentElement.style;
@@ -17,7 +20,8 @@ const defaultLenguage = 'Soy Ramon Saavedra, un apasionado desarrollador fronten
 const childrenNod = colorsElement.childNodes;
 const newColor = 'hsl(0, 0 %, 0 %)';
 
-toggletThemeElement.addEventListener('click', (e) => {
+
+toggletThemeElement.addEventListener('click', () => {
   document.body.classList.toggle('dark');
   if (toggleIconElement.src.includes('moon-regular.svg')) {
     toggleIconElement.src = 'assets/images/sun-regular.svg'
@@ -27,6 +31,7 @@ toggletThemeElement.addEventListener('click', (e) => {
     toggleTextElement.textContent = 'Dark Mode'
   }
 });
+
 const children = Array.from(document.querySelectorAll("#colors > div"));
 
 
@@ -45,7 +50,7 @@ const toggleColors = (showColors) => {
 };
 
 colorsElement.addEventListener('click', () => {
-  toggleColors(true)
+  toggleColors(true);
 });
 goback.addEventListener('click', () => {
   toggleColors(false);
@@ -63,7 +68,7 @@ document.documentElement.style.setProperty('--primary-color', newColor);
 
 const handleClick = (event) => {
   const clickedButton = event.target;
-  const paragraphElement = document.getElementById('paragraph'); // Reemplaza 'miParrafo' con el ID correcto de tu párrafo
+  const paragraphElement = document.getElementById('paragraph');
 
   switch (clickedButton.id) {
     case 'unitedkingdomFlag':
@@ -88,25 +93,3 @@ buttonGerman.addEventListener('click', handleClick);
 
 const buttonSpain = document.getElementById('spainFlag');
 buttonSpain.addEventListener('click', handleClick);
-
-// logoElement.forEach((logos) => {
-//   logos.addEventListener('click', (e) => {
-//     console.log(e.target);
-
-//     switch (true) {
-//       case logos.classList.contains('htmllogo'):
-//         experienceHTML.textContent = '5 months'
-//         logoElement.style.transform = "translateY(-300px)";
-//         break;
-//       case logos.classList.contains('csslogo'):
-//         experienceCss.textContent = '3 months'
-//         break;
-//       case logos.classList.contains('javascriptlogo'):
-//         experienceJavaScript.textContent = '5 months'
-//         break;
-//       case logos.classList.contains('reactlogo'):
-//         experienceReact.textContent = 'By learning'
-//         break;
-//     }
-//   })
-// })
