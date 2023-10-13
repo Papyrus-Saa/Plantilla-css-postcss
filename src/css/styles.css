@@ -146,8 +146,10 @@ body.dark {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid #3f3f3f;
-  box-shadow: 0px 2px 5px 0px #140216fd;
+  outline: 1px solid #054145;
+  -webkit-box-shadow: 0px 7px 11px -5px rgba(5, 65, 69, 1);
+  -moz-box-shadow: 0px 7px 11px -5px rgba(5, 65, 69, 1);
+  box-shadow: 0px 7px 11px -5px rgba(5, 65, 69, 1);
   color: var(--primary-color);
   border-top-right-radius: 1em;
   margin-bottom: 40px;
@@ -284,12 +286,70 @@ h3 {
 }
 /* beginning of infinity */
 
-.projectsContainer {
-  position: relative;
-}
-
 .projects {
   width: 90%;
   margin-bottom: 40px;
 }
 
+.projects__title {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.projectsContent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.projectsContent__items {
+  width: 90%;
+  border: 1px solid #054145;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.projectsContent-button {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projectsContent__button {
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.3em 1.5em;
+  border-radius: 0.5em;
+  animation: changeShadow 2s infinite alternate;
+}
+
+
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0px 0px 10px var(--bg-card-color);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px rgb(61, 2, 156);
+  }
+}
+
+.projectsContent__button--demo {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: none;
+}
+.projectsContent__button--code {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
