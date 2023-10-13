@@ -5,13 +5,17 @@ const toggleTextElement = document.getElementById('toggle-text');
 const colorsElement = document.getElementById('colors');
 const gobackElement = document.getElementById('goback');
 const selectColorsElement = document.getElementById('selectColors');
-const unitadKingdomFlagElement = document.getElementById('unitedkingdomFlag');
-const germanFlagElement = document.getElementById('germanFlag');
-const spainFlagElement = document.getElementById('spainFlag');
+const buttonUnitedKingdom = document.getElementById('unitedkingdomFlag');
+const buttonGerman = document.getElementById('germanFlag');
+const buttonSpain = document.getElementById('spainFlag');
 const paragraphElement = document.getElementById('paragraph');
 const logoElement = document.querySelectorAll('.logo');
-const btnElement = document.getElementById('btn-demo');
-const linkElement = document.getElementById('btn-code');
+const projectsSectionElement = document.getElementById('projectsSection');
+const projectsBtnElement = document.getElementById('projects__btn');
+const projectsActiveElement = document.getElementById('projectsActive');
+
+
+Element = document.getElementById('screenOn');
 
 
 const colorStyle = document.documentElement.style;
@@ -85,11 +89,7 @@ const handleClick = (event) => {
   }
 }
 
-const buttonUnitedKingdom = document.getElementById('unitedkingdomFlag');
+
 buttonUnitedKingdom.addEventListener('click', handleClick);
-
-const buttonGerman = document.getElementById('germanFlag');
 buttonGerman.addEventListener('click', handleClick);
-
-const buttonSpain = document.getElementById('spainFlag');
 buttonSpain.addEventListener('click', handleClick);
