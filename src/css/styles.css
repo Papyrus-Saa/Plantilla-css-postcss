@@ -19,7 +19,7 @@ body {
 
 body.dark {
   --text-color: hsl(0, 0%, 83%);
-  --bg-color: hsl(0, 0%, 15%);
+  --bg-color: hsl(0, 0%, 12%);
   --bg-card-color: hsl(0, 0%, 28%);
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
