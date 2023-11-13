@@ -76,13 +76,13 @@ const handleClick = (event) => {
 
   switch (clickedButton.id) {
     case 'unitedkingdomFlag':
-      paragraphElement.textContent = "I'm Ramon Saavedra, a passionate frontend developer with a constant thirst for knowledge and creativity";
+      paragraphElement.textContent = defaultLenguage;
       break;
     case 'germanFlag':
       paragraphElement.textContent = 'Ich bin Ramon Saavedra, ein leidenschaftlicher Frontend-Entwickler mit einem ständigen Durst nach Wissen und Kreativität';
       break;
     case 'spainFlag':
-      paragraphElement.textContent = defaultLenguage;
+      paragraphElement.textContent = ' Soy Ramon Saavedra, un apasionado desarrollador frontend con una sed constante de conocimiento y creatividad';
       break;
     default:
       break;
