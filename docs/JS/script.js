@@ -19,7 +19,7 @@ Element = document.getElementById('screenOn');
 
 
 const colorStyle = document.documentElement.style;
-const defaultLenguage = 'Soy Ramon Saavedra, un apasionado desarrollador frontend con una sed constante de conocimiento y creatividad'
+const defaultLenguage = "I'm Ramon Saavedra, a passionate frontend developer with a constantthirst for knowledge and creativity";
 
 const childrenNod = colorsElement.childNodes;
 const newColor = 'hsl(0, 0 %, 0 %)';
