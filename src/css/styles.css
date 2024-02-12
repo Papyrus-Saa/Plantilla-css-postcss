@@ -153,7 +153,7 @@ body.dark {
   /* color: var(--primary-color); */
   border-top-right-radius: 1em;
   margin-bottom: 40px;
-  padding: .6em;
+  padding: 0.6em;
 }
 
 .imgcontainer {
@@ -304,15 +304,9 @@ h3 {
   letter-spacing: 3px;
 }
 
-/* .projectsContent {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
-} */
-
 .projects__nameTitle {
   width: 100%;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 100;
 }
 
@@ -331,9 +325,10 @@ h3 {
 
 .projects__img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 400px; /* Ajusta la altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Escala la imagen para que llene su contenedor manteniendo la relación de aspecto */
+  /* object-position: center center; */
 }
 
 .projectsContent-button {
@@ -352,7 +347,6 @@ h3 {
   border-radius: 0.5em;
   animation: changeShadowBtn 2s infinite alternate;
 }
-
 
 @keyframes changeShadowBtn {
   0% {
