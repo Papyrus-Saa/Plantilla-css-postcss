@@ -37,16 +37,19 @@ body.dark {
 }
 
 .toggle-theme {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
 }
 
 .toggle-theme__icon {
+  display: block;
   width: 15px;
+  margin-right: 8px;
 }
 .toggle-theme__text {
+  display: block;
   font-size: 0.7rem;
 }
 
