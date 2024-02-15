@@ -70,26 +70,26 @@ colorsElement.addEventListener('click', (e) => {
 document.documentElement.style.setProperty('--primary-color', newColor);
 // titleElement.style.color = `var(--primary-color)`;
 
-const handleClick = (event) => {
-  const clickedButton = event.target;
-  const paragraphElement = document.getElementById('paragraph');
+// const handleClick = (event) => {
+//   const clickedButton = event.target;
+//   const paragraphElement = document.getElementById('paragraph');
 
-  switch (clickedButton.id) {
-    case 'unitedkingdomFlag':
-      paragraphElement.textContent = defaultLenguage;
-      break;
-    case 'germanFlag':
-      paragraphElement.textContent = 'Ich bin Ramon Saavedra, ein leidenschaftlicher Frontend-Entwickler mit einem ständigen Durst nach Wissen und Kreativität';
-      break;
-    case 'spainFlag':
-      paragraphElement.textContent = ' Soy Ramon Saavedra, un apasionado desarrollador frontend con una sed constante de conocimiento y creatividad';
-      break;
-    default:
-      break;
-  }
-}
+//   switch (clickedButton.id) {
+//     case 'unitedkingdomFlag':
+//       paragraphElement.textContent = defaultLenguage;
+//       break;
+//     case 'germanFlag':
+//       paragraphElement.textContent = 'Ich bin Ramon Saavedra, ein leidenschaftlicher Frontend-Entwickler mit einem ständigen Durst nach Wissen und Kreativität';
+//       break;
+//     case 'spainFlag':
+//       paragraphElement.textContent = ' Soy Ramon Saavedra, un apasionado desarrollador frontend con una sed constante de conocimiento y creatividad';
+//       break;
+//     default:
+//       break;
+//   }
+// }
 
 
-buttonUnitedKingdom.addEventListener('click', handleClick);
-buttonGerman.addEventListener('click', handleClick);
-buttonSpain.addEventListener('click', handleClick);
+// buttonUnitedKingdom.addEventListener('click', handleClick);
+// buttonGerman.addEventListener('click', handleClick);
+// buttonSpain.addEventListener('click', handleClick);

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/eac43127e7.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;600&family=Inter:wght@300&family=Lato:wght@400;900&family=Quicksand&family=Raleway:ital,wght@0,300;0,700;1,400&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;500;700;900&display=swap"
       rel="stylesheet" />
@@ -16,30 +17,15 @@
     <header id="header" class="header">
       <div class="switches">
         <div id="toggle-theme" class="toggle-theme">
-          <img
-            id="toggle-icon"
-            src="assets/images/moon-regular.svg"
-            alt="icon theme"
-            class="toggle-theme__icon" />
+          <div>
+            <img
+              id="toggle-icon"
+              src="assets/images/moon-regular.svg"
+              alt="icon theme"
+              class="toggle-theme__icon" />
+          </div>
           <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
         </div>
-      </div>
-      <div class="flags">
-        <img
-          id="unitedkingdomFlag"
-          class="unitadkingdomflag flagsize"
-          src="assets/images/united-kingom-flag.jpg"
-          alt="united-kingdomflag" />
-        <img
-          id="germanFlag"
-          class="germanflag flagsize"
-          src="assets/images/Flag-Germany.webp"
-          alt="germanflag" />
-        <img
-          id="spainFlag"
-          class="flagsize"
-          src="assets/images/spain-flag.jpg"
-          alt="spainflag" />
       </div>
       <div id="colors" class="colors colors-none">
         <div
@@ -59,195 +45,247 @@
       <p id="goback" class="texts__item texts__item--goback"></p>
     </header>
     <main>
-      <div class="description content">
-        <div class="imgcontainer">
-          <img
-            id="img"
-            class="imgmyself"
-            src="assets/images/ramon-image1.jpg"
-            alt="ramons's pic" />
+      <div class="flexContainer">
+        <div class="description content">
+          <div class="imgcontainer">
+            <img
+              id="img"
+              class="imgmyself"
+              src="assets/images/ramon-image1.jpg"
+              alt="ramons's pic" />
+          </div>
+          <p id="paragraph" class="paragraph">
+            I'm Ramon Saavedra, a passionate frontend developer with a constant
+            thirst for knowledge and creativity
+            <br />
+            <br />
+          </p>
         </div>
-        <p id="paragraph" class="paragraph">
-          I'm Ramon Saavedra, a passionate frontend developer with a constant
-          thirst for knowledge and creativity
-          <br />
-          <br />
-        </p>
+        <section class="skill-section">
+          <div class="content contenSkills">
+            <h2 class="projects__title">Skills</h2>
+            <div class="skillslogo">
+              <img
+                class="htmllogo logo"
+                src="assets/images/html-logo.png"
+                alt="htmllogo" />
+              <img
+                class="csslogo logo"
+                src="assets/images/css.logo.png"
+                alt="csslogo" />
+              <img
+                class="javascriptlogo logo"
+                src="assets/images/javascript-logo.png"
+                alt="javascriptlogo" />
+              <img
+                class="reactlogo logo"
+                src="assets/images/React.svg.png"
+                alt="reactlogo" />
+            </div>
+
+            <div class="experience experience-years">
+              <p class="experience-number">5</p>
+              <p class="experience-number">4</p>
+              <p class="experience-number">3</p>
+              <p class="experience-number">1</p>
+            </div>
+            <div class="experience">
+              <span
+                id="experienceHTML"
+                class="experience__paragraph experience__paragraph--html"
+                >Months</span
+              >
+              <span
+                id="experienceCss"
+                class="experience__paragraph experience__paragraph--css"
+                >Months</span
+              >
+              <span
+                id="experienceJavaScript"
+                class="experience__paragraph experience__paragraph--javascript"
+                >Months</span
+              >
+              <span
+                id="experienceReact"
+                class="experience__paragraph experience__paragraph--react"
+                >Month</span
+              >
+            </div>
+          </div>
+        </section>
       </div>
-      <section class="skill-section">
-        <div class="content">
-          <h2 class="projects__title">Skills</h2>
-          <div class="skillslogo">
-            <img
-              class="htmllogo logo"
-              src="assets/images/html-logo.png"
-              alt="htmllogo" />
-            <img
-              class="csslogo logo"
-              src="assets/images/css.logo.png"
-              alt="csslogo" />
-            <img
-              class="javascriptlogo logo"
-              src="assets/images/javascript-logo.png"
-              alt="javascriptlogo" />
-            <img
-              class="reactlogo logo"
-              src="assets/images/React.svg.png"
-              alt="reactlogo" />
-          </div>
+      <p class="intro">
+        Sehr geehrte Damen und Herren, <br /><br />
 
-          <div class="experience experience-years">
-            <p class="experience-number">5</p>
-            <p class="experience-number">4</p>
-            <p class="experience-number">3</p>
-            <p class="experience-number">1</p>
-          </div>
-          <div class="experience">
-            <span
-              id="experienceHTML"
-              class="experience__paragraph experience__paragraph--html"
-              >Months</span
-            >
-            <span
-              id="experienceCss"
-              class="experience__paragraph experience__paragraph--css"
-              >Months</span
-            >
-            <span
-              id="experienceJavaScript"
-              class="experience__paragraph experience__paragraph--javascript"
-              >Months</span
-            >
-            <span
-              id="experienceReact"
-              class="experience__paragraph experience__paragraph--react"
-              >Month</span
-            >
-          </div>
-        </div>
-      </section>
+        Ich bin ein leidenschaftlicher Frontend-Entwicklermit mit einem soliden
+        Selbststudium und einem Jahr ausschließlicher Hingabe, um das
+        Kompetenzniveau zu erreichen, das ich derzeit besitze. Meine Faszination
+        für das Frontend liegt in der einzigartigen Kombination von Kreativität
+        und Technologie, die es impliziert. Ich genieße es sehr, Designs und
+        Konzepte durch die Implementierung von Code zum Leben zu erwecken und
+        fesselnde und funktionale Benutzererfahrungen zu schaffen. Mein
+        Fähigkeitsspektrum umfasst HTML, CSS, JavaScript und React, wie in den
+        von mir durchgeführten Projekten ersichtlich ist. Ich bin stolz darauf,
+        effektive, optimierte und ästhetisch ansprechende Frontend-Lösungen dank
+        meiner Beherrschung dieser Technologien anbieten zu können. In meinem
+        ständigen Bestreben, mich zu verbessern und auf dem neuesten Stand der
+        Dinge zu bleiben, habe ich vor, bald mein Studium in Next.js zu
+        beginnen. Ich erkenne den Wert, den dieses Werkzeug der
+        Frontend-Entwicklung hinzufügt, und freue mich darauf, es in meine
+        Projekte zu integrieren, um seine Fähigkeiten optimal zu nutzen,
+        kombiniert mit meiner Erfahrung in React. Ich danke Ihnen aufrichtig für
+        die Gelegenheit, etwas über meine Leidenschaft und meine Ambitionen in
+        der Welt der Frontend-Entwicklung zu teilen. Ich freue mich auf
+        zukünftige Möglichkeiten, die dieses aufregende Feld bieten kann.
+        <br /><br />
+
+        Mit freundlichen Grüßen, <br /><br />
+
+        Ramon Saavedra
+      </p>
       <section class="projectsContainer content">
-        <div class="projectsContainer__title">
-          <h2 class="projects__title">Projects</h2>
-        </div>
-        <div class="projects__name">
-          <h3 class="projects__nameTitle">Password generator</h3>
-          <div class="projects__madeWith">
-            <img
-              src="assets/images/html-logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/css.logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/javascript-logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
+        <h2 class="projects__title">Projects</h2>
+        <div class="projectsContainer__grid">
+          <div class="projects__name">
+            <h3 class="projects__nameTitle">Password generator</h3>
+            <div>
+              <div class="projects__madeWith">
+                <img
+                  src="assets/images/html-logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/css.logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/javascript-logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+              </div>
+            </div>
+            <div class="projectsContent">
+              <div class="projectsContent__items">
+                <a href="https://papyrus-saa.github.io/Password-generator2/">
+                  <img
+                    class="projects__img"
+                    src="assets/images/Password-generator2.png"
+                    alt="Password-generator"
+                /></a>
+              </div>
+              <div class="projectsContent-button">
+                <a
+                  class="projectsContent__button projectsContent__button--demo"
+                  href="https://papyrus-saa.github.io/Password-generator2/"
+                  >Demo</a
+                >
+                <a
+                  class="projectsContent__button projectsContent__button--code"
+                  href="https://github.com/Papyrus-Saa/Password-generator2.git"
+                  >Code</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="projectsContent">
-          <div class="projectsContent__items">
-            <img
-              class="projects__img"
-              src="assets/images/Password-generator2.png"
-              alt="Password-generator" />
+          <div class="projects__name">
+            <h3 class="projects__nameTitle">Rock Paper Scissors</h3>
+            <div>
+              <div class="projects__madeWith">
+                <img
+                  src="assets/images/html-logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/css.logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/javascript-logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+              </div>
+            </div>
+            <div class="projectsContent">
+              <div class="projectsContent__items">
+                <a href="https://papyrus-saa.github.io/Rock-paper-scissors/">
+                  <img
+                    src="assets/images/rock-paper-scissors.png"
+                    alt="rock-paper-scissors"
+                    class="projects__img" />
+                </a>
+              </div>
+              <div class="projectsContent-button">
+                <a
+                  class="projectsContent__button projectsContent__button--demo"
+                  href="https://papyrus-saa.github.io/Rock-paper-scissors/"
+                  >Demo</a
+                >
+                <a
+                  class="projectsContent__button projectsContent__button--code"
+                  href="https://github.com/Papyrus-Saa/Rock-paper-scissors.git"
+                  >Code</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="projectsContent-button">
-            <a
-              class="projectsContent__button projectsContent__button--demo"
-              href="https://papyrus-saa.github.io/Password-generator2/"
-              >Demo</a
-            >
-            <a
-              class="projectsContent__button projectsContent__button--code"
-              href="https://github.com/Papyrus-Saa/Password-generator2.git"
-              >Code</a
-            >
-          </div>
-
-          <!-- <div class="projectsContent__items"></div>  -->
-        </div>
-        <div class="projects__name">
-          <h3 class="projects__nameTitle">Rock Paper Scissors</h3>
-          <div class="projects__madeWith">
-            <img
-              src="assets/images/html-logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/css.logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/javascript-logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-          </div>
-        </div>
-        <div class="projectsContent">
-          <div class="projectsContent__items">
-            <img
-              src="assets/images/rock-paper-scissors.png"
-              alt="rock-paper-scissors"
-              class="projects__img" />
-          </div>
-          <div class="projectsContent-button">
-            <a
-              class="projectsContent__button projectsContent__button--demo"
-              href="https://papyrus-saa.github.io/Rock-paper-scissors/"
-              >Demo</a
-            >
-            <a
-              class="projectsContent__button projectsContent__button--code"
-              href="https://github.com/Papyrus-Saa/Rock-paper-scissors.git"
-              >Code</a
-            >
-          </div>
-        </div>
-        <div class="projects__name">
-          <h3 class="projects__nameTitle">The Praxis</h3>
-          <div class="projects__madeWith">
-            <img
-              src="assets/images/html-logo.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/css.logo.png"
-              alt="css logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/javascript-logo.png"
-              alt="javascript logo"
-              class="projects__madeWithImg" />
-            <img
-              src="assets/images/React.svg.png"
-              alt="html logo"
-              class="projects__madeWithImg" />
-          </div>
-        </div>
-        <div class="projectsContent">
-          <div class="projectsContent__items">
-            <img
-              src="assets/images/praxis-pic.png"
-              alt="rock-paper-scissors"
-              class="projects__img" />
-          </div>
-          <div class="projectsContent-button">
-            <a
-              class="projectsContent__button projectsContent__button--demo"
-              href="https://praxis-sanchez.netlify.app/"
-              >Demo</a
-            >
-            <a
-              class="projectsContent__button projectsContent__button--code"
-              href="https://github.com/Papyrus-Saa/the-praxis.git"
-              >Code</a
-            >
+          <div class="projects__name">
+            <h3 class="projects__nameTitle">The Praxis</h3>
+            <div>
+              <div class="projects__madeWith">
+                <img
+                  src="assets/images/html-logo.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/css.logo.png"
+                  alt="css logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/javascript-logo.png"
+                  alt="javascript logo"
+                  class="projects__madeWithImg" />
+                <img
+                  src="assets/images/React.svg.png"
+                  alt="html logo"
+                  class="projects__madeWithImg" />
+              </div>
+            </div>
+            <div class="projectsContent">
+              <div class="projectsContent__items">
+                <a href="https://praxis-sanchez.netlify.app/">
+                  <img
+                    src="assets/images/praxis-pic.png"
+                    alt="rock-paper-scissors"
+                    class="projects__img"
+                /></a>
+              </div>
+              <div class="projectsContent-button">
+                <a
+                  class="projectsContent__button projectsContent__button--demo"
+                  href="https://praxis-sanchez.netlify.app/"
+                  >Demo</a
+                >
+                <a
+                  class="projectsContent__button projectsContent__button--code"
+                  href="https://github.com/Papyrus-Saa/the-praxis.git"
+                  >Code</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <footer>
+        <div>
+          <p class="contactFooterParagraph">
+            Contact
+          </p>
+        </div>
+        <div class="contactContainer">
+          <a href="tel:+4915221881393"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:saavedra.ramon.brand@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </footer>
     </main>
     <script src="JS/script.js"></script>
   </body>
